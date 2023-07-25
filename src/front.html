@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>First Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/2cc21cf3a4.js" crossorigin="anonymous"></script>
+    
+	<style>
+		body{
+    margin:0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/*------------------- body header area -------------------- */
+#body-header{
+height:auto;
+width: 100%;
+opacity:0.9;
+background-image: url(https://ak.picdn.net/shutterstock/videos/12063482/thumb/1.jpg);
+background-size:cover;
+background-position: center;
+background-attachment: fixed;
+padding-top: 0px;
+}
+
+.navigation li a{
+    transition: 1s;
+}
+
+.navigation li a:hover{
+    color:rgb(202, 71, 71);
+    border-style:none;
+    /* height: 30px;
+    width: 30px; */
+    border-radius:100%;
+    box-shadow: 2px 2px 2px 2px white;
+    /* background-color: lightcyan; */
+}
+
+.horizontal-list{  
+    list-style: none;
+    padding:10px 20px 90px 20px;
+    margin: 0px;
+    text-align: center;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 2px 8px 8px 2px;
+    font-weight: 100;
+    font-size: 1.2rem;
+    
+}
+
+.horizontal-list li a{
+    /* font-style: italic; */
+    color:rgb(27, 24, 24);
+    text-decoration: none;
+}
+
+.text-container{
+    margin:auto;
+}
+
+#my-name{
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
+    color: rgb(10, 97, 39);
+    text-shadow: brown;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.nav-menu li span a{
+    transition:color 0.5s; 
+    margin-top: 1000p;
+    border-bottom: 4px;
+}
+.nav-menu li a:hover{
+    color:brown;
+    box-shadow: 2px 2px 12px 4px white; 
+    background-color: lightcyan;
+    background: none;
+ }
+
+.social-icon{
+    margin-bottom:auto;
+}
+
+.social-icon li a i{
+    font-size:1.7rem;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.social-icon li a i:hover{
+    color:rgb(139, 159, 214);
+    border-style:none;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px white;
+    background-color: lightcyan;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/* -----------------section-division----------------- */
+
+section{
+    width: 100%;
+    /* height: 65vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section:nth-child(2n){
+    background-color: #91232329;
+}
+section:nth-child(2n+1){
+    background-color:white;
+
+}
+
+/*------------------- about area -------------------- */
+#about{
+    height:auto;
+    width: 100%;
+    /* padding: 0px 0px 0px 0px;
+    font-weight: 400; */
+    position: relative;
+    margin-bottom: 30px;
+    background-color: #6ed27bb5;
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    /* position: relative; */
+    margin:auto;
+    /* margin-bottom:30PX; */
+    margin-top:-13vh;
+/* background-color: #93738c; */
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 2px 2px 15px 4px lightgrey;
+}
+
+#my-image img:hover{
+    color:brown;
+    border: 3px solid rgb(105, 233, 184);
+    border-style:none;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px 2px rgb(109, 34, 34);
+    background-color: white;
+    
+ }
+
+.my-para{
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: rgb(79, 53, 53);
+    line-height: 28px;
+    font-size: 1.5rem;
+    margin: auto;
+    
+}
+
+/*------------------- development area -------------------- */
+#development{
+    height: auto;
+    width: 50%;
+	margin-left: 20%;
+    display: flex;
+	font-size:2 rem;
+	text-align: justify;
+    flex-direction:column;
+    /* justify-content: top; */
+    align-items: center;
+    /* background-color:#989882; */
+}
+ 
+.my-heading{
+    font-size: 2rem;
+    font-weight: 250;
+    color: #2857a4;
+    margin-bottom: 0.1rem; 
+	/* background-color: #0b8176; */
+}
+
+.mb75px{
+    margin-bottom: 75px;
+	
+}
+
+#div-align{
+    height: auto;
+    /* width: auto; */
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: row;
+    /* flex-wrap:nowrap; */
+    align-items: center;
+    justify-content: center;
+	font-size: 15px; 
+	background-color: #0b8176;}
+
+
+.Development-display{
+    width:75%;
+    padding: 10px;
+
+    margin-bottom: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
+
+
+ .Development-progress{
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+    border:1px solid blue;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.Development-progress>div{
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+    
+
+}
+
+.eighty-five-percent1{
+    width: 85%;
+    height: inherit;
+}
+
+.eighty-five-percent2{
+    width: 60%;
+    height: inherit;
+}
+
+.eighty-five-percent3{
+    width: 80%;
+    height: inherit;
+}
+
+.eighty-five-percent4{
+    width: 80%;
+    height: inherit;
+}
+
+.eighty-five-percent5{
+    width: 75%;
+    height: inherit;
+}
+
+.eighty-five-percent6{
+    width: 60%;
+    height: inherit;
+}
+
+.mb-blue{
+    background-color: #2857a4;
+    
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+.progress-bar-text span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+    
+}
+.myclass{
+	font-size: 1.5rem;
+	margin-left: 10vh;
+	margin-right: 10vh;
+	/* background-color: #98828a; */
+}
+
+
+/*------------------- experience area -------------------- */
+/* #experience{
+
+} */
+
+.timeline{
+    position:relative;
+    width: 75%;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+	background-color: #98d19c;
+}
+
+.timeline-box{
+    position: relative;
+    padding: 5px;
+    width: 40%;
+    left: 5%;
+    min-height:150px;
+    text-align: right;
+    /* border: 2px solid black; */
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1):after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: -11.8%;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n):after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: -9%;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    z-index: 1;
+}
+
+.timeline-container {
+    padding: 8px;
+    /* background-size: auto;
+    background-color: wheat;
+    border-radius: 7%; */
+
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.m-blue {
+    color: #2857a4;
+}
+
+
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0px;
+    border: 2px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+    color: #433E3F;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.timeline-traveller{
+    color: #2857a4;
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #201913;
+    font-weight: 200;
+    font-size: 3vh;
+	font-family:serif;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+	
+    font-size: 1rem;
+}
+
+.experience-description {
+    list-style: none;
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+
+/*------------------- education area -------------------- */
+/* #education{
+
+} */
+
+/*------------------- portfoliyo area -------------------- */
+/* .mydiv {
+background-color: #ee89a0;
+} */
+
+/*------------------- contact area -------------------- */
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+.contact-heading{
+    font-size: 2rem;
+    font-weight: 300;
+    color:whitesmoke;
+    margin-bottom: 1rem;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+
+#contact-container {
+    display: flex;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* .watermark {
+      position:fixed;
+      top: 20%;
+      text-align: center;
+      left: 0%;
+      transform: translate(0%, -50%);
+      opacity:0.2;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size:10vh;
+      font-weight: bold;
+      color: #181515;
+      pointer-events: none;
+    } */ 
+
+	</style></head>
+    <body>
+		
+        <header id="body-header">
+            <!-- <div class="watermark"><h6>UTTAR PRADESH COOPERATIVE SUGARCANE FACTORIES AND FADERATION.PVT.LTD</h6></div> -->
+  
+            <nav class="navigation">
+                <ul class="horizontal-list">
+                    <li> <a href="#"> <b>Home </b></a>
+                    </li>
+
+                    <li>
+                        <a href="#about"> <b>About</b> </a>
+                     </li>
+
+                     <li>
+                        <a href="#Organization"> <b>Organization</b> </a>
+                     </li>
+
+                     <li>
+                        <a href="#Development"> <b>Development</b>
+                        </a>  
+                     </li>
+
+                     <li>
+                        <a href="#Environmental Concern"> <b>Environment Concern</b>
+                        </a> 
+                     </li>
+
+                     <li>
+                        <a href="#Products & Byproducts"> <b>Products & Byproducts</b> </a>
+                     </li>
+
+                     <li>
+                        <a href="#Future Objective"> <b>Future Objective</b>
+                         </a>
+                     </li>
+
+                    <li>
+                        <a href="#contact"> <b>Contact</b> </a>
+                    </li>
+
+                        <li>
+                            <a href="http://127.0.0.1:5500/frontend/src/login.html"> <b>Login</b> </a>
+                         </li>
+                 </ul>
+            </nav>
+            <div class="text-container navigation">
+                <h2 id="my-name">
+                    Uttar Pradesh Co-operative Sugarcane Factories And Faderation, PVT.LTD
+                    <br>
+                    (SugarCane Management System)
+                </h2>
+            </div>
+            <div>
+                <ul class="horizontal-list social-icon">
+                    <li>
+                        <!-- <a href="https://www.linkedin.com/in/poorvi-srivastava-46a13b1bb/" target="blank"> <i class="fa-brands fa-linkedin"></i> </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="https://www.facebook.com/adarsh.srivastava.96155669/" target="blank"> <i class="fa-brands fa-facebook"></i> </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="https://github.com/Poorvisrivastava15" target="blank"> <i class="fa-brands fa-github"></i> </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="https://twitter.com/Poorvisrivast14" target="blank"> <i class="fa-brands fa-twitter"></i> </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="https://www.instagram.com/poorvisri15/" target="blank"> <i class="fa-brands fa-instagram"></i> </a> -->
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <!-- --------------------------about section--------------------------- -->
+            <Section id="about">
+                <div id="my-image">
+                    <img src="logo_sugarcane.gif" alt="profile photo">
+                </div>
+                <div class="my-para">
+                    U.P. Co-operative sugar factories Federation as an apex body of U.P. was established in 1963 for development and expansion of co-operative sugar industries in U.P. Sugar federation since its inception has been playing active role in establishment of new sugar factories, expansion and modernisation of existing sugar factories, establishment of distilleries for use of byproducts and giving financial, technical and administrative advices and guidelines.
+                    Federation has opened and liberalised its Sugar agent policy. It is now open window system and one can apply any time since tender system has been abolished. Any person having Sugar Sale linence can apply to Managing Director , U.P.Cooperative Sugar Factories Fed Ltd., 9-A Rana Pratap Marg Lucknow on their letter head along with the following information and documents and bank draft Earnest money of Rs. 5 Lacs for 5 mills, Rs. 10 Lacs for 15 mills and Rs. 15 Lacs for all co-operative sugar mills of U.P. We shall not pay any interest on said Earnest Money. Along with this you have to give the names of the mills for which Agency is required in favour of U.P.Cooperative Sugar Factories Federation Ltd. Payable at Lucknow.
+                </div>
+            </Section>
+
+            <!-- --------------------------skill section--------------------------- -->
+            <Section id="Development">
+                <h3 class="my-heading mb75px"><span>
+					<i class="fa-solid fa-suitcase"></i>
+				</span>
+                    Development
+                </h3>    
+				<p class="myclass">The First co-operative sugar factory was installed in year 1957 in district Nainital ( currently in Distt. Udham Singh Nagar). It was inaugurated by India's first Prime Minister Pt. Jawahar Lal Nehru on 16th Feb,1959. Its successful operation brought a new enthusiasm in U.P. and consequently other new co-operative sugar mills were installed.
+
+					During 1959 to 1971, there were only five co-operative sugar factories in U.P. Currently there are 28 units in U.P. in which 6 in western zone, 14 in central zone and rest 8 in eastern zone. Five Sugar mill namely Dhuriapar, Sathion, Aurai, Powayan & Majhola are not in operation. Thus a total 23 sugar factories are functional in U.P in co-operative sector with total crushing capacity of 60000 TCD.</p>             
+            </Section>
+
+            <!-- --------------------------experience section---------------------- -->
+            <Section id="Products & Byproducts">
+                <h3 class="my-heading mb75px">
+                    <span>
+                        <i class="fa-solid fa-suitcase"></i>
+                    </span>
+                    <span>
+                        Products & Byproducts
+                    </span>
+                </h3>
+                <div class="timeline">
+                    <div class="timeline-box ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                                <!-- <img src="http://1.bp.blogspot.com/_7VOXJq78r8Q/TUnC9iHn54I/AAAAAAAAAGQ/1LBymJAo62Q/s1600/Sugar.bmp"> -->
+                            </div>
+                            <h3 class="experience-designation m0 m-blue">Sugar</h3>
+                            <h4 class="experience-company-name">Sugarcane factories are primarily known for producing various types of sugar, including granulated sugar, powdered sugar, and brown sugar. The sugar is extracted from the sugarcane juice through processes such as crushing, boiling, and evaporation.
+							</h4>
+                            <!-- <h5 class="experience-duration m0"> April 2018 - March 2020 </h5> -->
+    
+                            <p class="experience-description text-align-right">
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-box right ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                                <!-- <img src="https://healingthebody.ca/wp-content/uploads/2017/03/product-molasses-1.jpg"> -->
+                            </div>
+                            <h3 class="experience-designation  m0 m-blue">Molasses</h3>
+                            <h4 class="experience-company-name">Molasses is a thick, dark syrup that is a by-product of sugar production. It is rich in nutrients and is often used in the production of alcoholic beverages, such as rum and certain types of beer. It can also be used in baking, as a sweetener, or as an animal feed additive.
+
+							</h4>
+                            <!-- <h5 class="experience-duration m0"> August 2018 - November 2018 </h5> -->
+                            <!-- <p class="experience-description text-align-right">  </p> -->
+                        </div>
+                    </div>
+
+                    <div class="timeline-box ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                                <!-- <img src="https://tse2.mm.bing.net/th?id=OIP.GLqFMUusnlwHgkez2elyFQAAAA&pid=Api&P=0&h=180"></img><br> -->
+                            </div>
+                            <h3 class="experience-designation  m0 m-blue">Bagasses</h3>
+                            <h4 class="experience-company-name">Bagasse is the fibrous residue that remains after the sugarcane stalks are crushed to extract the juice. It is a valuable co-product of sugarcane factories and is commonly used as a source of renewable energy. Bagasse can be burned to produce steam and generate electricity for the factory's operations or for sale to the power grid.
+
+							</h4>
+                            <!-- <h5 class="experience-duration m0"> November 2016 - October 2017 </h5> -->
+    
+                          <!-- <ul class="experience-description" style="text-align: left;">
+                                <li>description</li></ul>
+                                 -->
+                        </div>
+                    </div>
+                    
+    
+                    <div class="timeline-box left ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                    
+                                <!-- <img src="./assets/images/IndiawaleCoders.png"> -->
+                            </div>
+                            <h3 class="experience-designation m0 m-blue">Ethenol</h3>
+                            <h4 class="experience-company-name">Some sugarcane factories have distillation facilities to produce ethanol, a biofuel derived from sugarcane juice or molasses. Ethanol is used as a fuel additive or as a standalone fuel, particularly in the production of biofuels for vehicles.
+							</h4>
+                            <!-- <h5 class="experience-duration m0"> Jan 2021 - Feb 2021 </h5> -->
+    
+                            <!-- <p class="experience-description text-align-right">Taught data structures ad algorithms with java  </p> -->
+                        </div>
+                    </div>
+    
+					<div class="timeline-box left ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                    
+                                <!-- <img src="./assets/images/IndiawaleCoders.png"> -->
+                            </div>
+                            <h3 class="experience-designation m0 m-blue">Filter cake</h3>
+                            <h4 class="experience-company-name">Filter cake is a residual solid material obtained during the sugarcane juice clarification process. It is often dried and used as a nutrient-rich organic fertilizer or animal feed supplement.
+
+							</h4>
+                            <!-- <h5 class="experience-duration m0"> Jan 2021 - Feb 2021 </h5> -->
+    
+                            <!-- <p class="experience-description text-align-right">Taught data structures ad algorithms with java  </p> -->
+                        </div>
+                    </div>
+					<div class="timeline-box left ">
+                        <div class="timeline-container">
+                            <div class="timeline-logo">
+                    
+                                <!-- <img src="./assets/images/IndiawaleCoders.png"> -->
+                            </div>
+                            <h3 class="experience-designation m0 m-blue">Cogeneration and Bioenergy</h3>
+                            <h4 class="experience-company-name">Cogeneration and Bioenergy: In addition to bagasse, sugarcane factories may generate additional bioenergy by utilizing other agricultural residues or waste products, such as rice husks or wood chips. This energy can be used to power the factory and potentially supply electricity to the surrounding community.
+
+							</h4>
+                            <!-- <h5 class="experience-duration m0"> Jan 2021 - Feb 2021 </h5> -->
+    
+                            <!-- <p class="experience-description text-align-right">Taught data structures ad algorithms with java  </p> -->
+                        </div>
+                    </div>
+                    <div class="timeline-divider">
+                        <div class="timeline-traveller">
+                             <i class="fas fa-tractor"></i>
+                        </div>
+                    </div>
+                </div>
+            </Section>
+			
+
+			<Section id="Profile">
+                <h3 class="my-heading mb75px">
+                    
+                    
+                </h3>                 
+            </Section>
+			<!-- --------------------------portfolio section----------------------- -->
+		<Section id="Future Objective">
+                <h3 class="my-heading mb75px">
+                    <span>
+                        <i class="fa-solid fa-suitcase"></i>
+                    </span>
+                    <span>
+                    Future Objective
+                    </span>
+                </h3>
+				<p class="myclass">Sugar federation has plan for efficient functioning of sugar mills and distilleries, financial stability and quality control of its products. Emphasis is on maintaining financial discipline, financial control and effective management. Modernisation of sugar mills is being done to improve the quality of products. Besides there is an effective plan for improvement of financial health of sick sugar mills. All this endeavour has however, kept the interest of the cane growers as one of the prime concerns.</p>
+            </Section>
+
+            <!-- --------------------------contact section--------------------------- -->
+            <section id="contact">
+                <h3 class="contact-heading mb75px">
+                    <span>
+                        <i class="far fa-address-card" aria-hidden="true"></i>
+                    </span>
+                    <span> CONTACT </span>
+                </h3>
+                <div id="contact-container">
+    
+                    <div id="contact-form-container">
+                        <form id="contact-form">
+                            <input id="input-name" name="name" type="text" placeholder="Your Name">
+                            <input id="input-email" name="input-email" type="email" required="" placeholder="Your Email">
+                            <textarea id="input-message" name="input-message" rows="2" cols="40" placeholder="Message"></textarea>
+                            <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                    <div id="my-details-container">
+    
+                        <h3> Get In touch </h3>
+    
+                        <h3> My Address </h3>
+                        <div class="my-details-info-container">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>Lucknow(Uttar Pradesh)</span>
+                        </div>
+                       <div class="my-details-info-container">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span><a href="tel:+919807841475">+91 98XXXXXXXX</a></span>
+                        </div>
+                        <div class="my-details-info-container">
+                            <i class="far fa-envelope" aria-hidden="true"></i>
+                            <span><a href="mailto:adarshraghvendra@gmail.com?" target="blank">XYZ@gmail.com</a></span>
+                        </div>
+                    </div>
+                </div>
+    
+            <div class="social-icon text-center">
+                    <ul class="no-list-style horizontal-list ">
+                        <li>
+                            <a href="https://www.linkedin.com/in/adarsh-srivastava-5646101b8/" target="blank"> <i class="fa-brands fa-linkedin" aria-hidden="true"></i> </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/adarsh.srivastava.96155669/" target="blank"> <i class="fa-brands fa-facebook" aria-hidden="true"></i> </a>
+                        </li>
+                         <li>
+                            <a href="https://github.com/Adarsh-0001" target="blank"> <i class="fa-brands fa-github" aria-hidden="true"></i> </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/IndianAdi13" target="blank"> <i class="fa-brands fa-twitter" aria-hidden="true"></i> </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/khurafatiadi/" target="blank"> <i class="fa-brands fa-instagram" aria-hidden="true"></i> </a>
+                        </li>
+                    </ul>
+            </div>
+            </section>
+        </main>
+
+        <script src="" async defer></script>
+    </body>
+</html>
